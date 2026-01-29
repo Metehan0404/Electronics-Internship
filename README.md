@@ -8,4 +8,4 @@ This repository contains my work and sensor tests during the electronics lab int
 
 ## Hardware Used
 - **Microcontroller:** Arduino Uno (Joy-IT R3 DIP)
-- **Sensor Kit:**
+- **Sensor Kit:** Joy-IT Sensor Kit
