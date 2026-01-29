@@ -4,12 +4,7 @@ This log tracks my daily progress and activities during the Electronics Internsh
 ## Week 1
 ### Day 1: 26/01/2026
 
-* **Activities:** 
-Tested the KY-011 2-Color LED Module with Arduino Uno (Joy-IT R3 DIP).
-
-Tried two different codes with the module and learned the basics of the code used for Arduino
-
-Documented the hardware setup and pin connections.
+* **Activities:** Tested the KY-011 2-Color LED Module with Arduino Uno (Joy-IT R3 DIP). Tried two different codes with the module and learned the basics of the code used for Arduino. Documented the hardware setup and pin connections.
 
 * **Observations:** The module uses a common cathode; therefore, only one GND connection is needed for both colors.
 
@@ -41,12 +36,7 @@ Documented the hardware setup and pin connections.
 
 ### Day 4: (29/01/2026)
 
-* **Activities:** 
-Created the official GitHub repository for the internship.
-
-Installed and learned the basic GitHub Desktop workflow (Clone, Commit, Push).
-
-Converted all previously written reports to markdown versions and pushed them to Github.
+* **Activities:** Created the official GitHub repository for the internship. Installed and learned the basic GitHub Desktop workflow (Clone, Commit, Push). Converted all previously written reports to markdown versions and pushed them to Github.
 
 * **Observations:** 
 

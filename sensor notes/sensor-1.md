@@ -26,26 +26,37 @@ The sensor module was directly plugged into the Arduino Uno headers without usin
 
 - **PIN Connection:** 
 Arduino Uno (Joy-IT R3 DIP)
+
 G (Green) → Pin 12
 
 R (Red) → Pin 13
 
 (GND) → GND
 
-- **Arduino Sketch**
+- **Arduino Sketch:**
+
 void setup() {
+
   pinMode(12, OUTPUT);
+
   pinMode(13, OUTPUT);
+
 }
 
 void loop() {
+
   digitalWrite(12, HIGH);
+
   digitalWrite(13, LOW);
+
   delay(1000);
   
   digitalWrite(12, LOW);
+
   digitalWrite(13, HIGH);
+
   delay(1000);
+
 }
 
 
@@ -62,28 +73,38 @@ This experiment uses PWM to control the intensity of the LED, moving beyond simp
 The sensor module was plugged into the Arduino Uno headers using jumper wires. For fading, pin 11 was used because we need PWM.
 
 - **PIN Connection:** 
+
 G (Green) → Pin 11 (PWM Pin)
 
 (GND) → GND
 
-- **Arduino Sketch**
+- **Arduino Sketch:**
+
 int ledPin = 11;
+
 int brightness = 0;
+
 int fadeAmount = 5;
 
 void setup() {
+
   pinMode(ledPin, OUTPUT);
+
 }
 
 void loop() {
+
   analogWrite(ledPin, brightness);
 
   brightness = brightness + fadeAmount;
 
   if (brightness <= 0 || brightness >= 255) {
+
     fadeAmount = -fadeAmount;
+
   }
 
   delay(30);
+
 }
 
