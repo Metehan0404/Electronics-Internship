@@ -31,7 +31,7 @@ G (Green) → Pin 12
 
 R (Red) → Pin 13
 
-(GND) → GND
+(-) → GND
 
 - **Arduino Sketch:**
 
@@ -76,7 +76,7 @@ The sensor module was plugged into the Arduino Uno headers using jumper wires. F
 
 G (Green) → Pin 11 (PWM Pin)
 
-(GND) → GND
+(-) → GND
 
 - **Arduino Sketch:**
 

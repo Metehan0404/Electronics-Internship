@@ -6,7 +6,7 @@ This log tracks my daily progress and activities during the Electronics Internsh
 
 * **Activities:** Tested the KY-011 2-Color LED Module with Arduino Uno (Joy-IT R3 DIP). Tried two different codes with the module and learned the basics of the code used for Arduino. Documented the hardware setup and pin connections.
 
-* **Observations:** The module uses a common cathode; therefore, only one GND connection is needed for both colors.
+* **Observations:** The LED module uses a common cathode; therefore, only one GND connection is needed for both colors. While digital pins are enough, PWC pins can be used when an analog output is needed. 
 
 * **Challenges:** "Failed uploading" error due to driver and physical connection issues.
 
