@@ -48,11 +48,23 @@ When trying to read the data too fast, the numbers jumped around. Adding a small
 
 ### Day 3: 28/01/2026
 
-* **Activities:** 
+* **Activities:** Integrated the KY-023 Dual-Axis Joystick and the KY-004 Tactile Button to explore complex input methods. The focus was on managing simultaneous analog data streams (X-Y axes) and implementing a digital trigger for user interaction.
 
-* **Challanges:**
+* **Technical Skills Acquired:** 
+
+Learned how to process multiple analog inputs concurrently without signal interference.
+
+Understood the INPUT_PULLUP function, which utilizes the Arduino's internal resistor to ensure a stable "HIGH" state when a button is not pressed.
+
+Learned how to translate mechanical movement (joystick tilt) and momentary contact (button press) into actionable software commands.
 
 * **Observations:** 
+
+Observed that while the theoretical center is 512, the mechanical resting position of the joystick can vary slightly, requiring a "deadzone" in code for precise control.
+
+Noticed that using PULLUP logic means the button returns a 0 (LOW) when active; this reversed logic is crucial for correct conditional programming.
+
+Confirmed that the X and Y potentiometers operate independently, allowing for diagonal movement tracking by calculating the relationship between both values.
 
 
 
@@ -69,34 +81,70 @@ Learned how to use GitHub and how to interact with it as I need.
 Learned what "Markdown" or ".md" texts are and how to write them.
 
 
-* **Observations:** 
+* **Observations:** None
 
 
 
 ### Day 5: 30/01/2026
 
-* **Activities:** 
+* **Activities:** Implemented the HC-SR04 Ultrasonic Distance Sensor to measure object proximity. The objective was to convert raw timing data into physical distance (centimeters) using mathematical constants.
 
-* **Challanges:**
+* **Technical Skills Acquired:** 
+
+Learned to use the pulseIn() function to capture the precise microsecond duration of a reflected sound wave.
+
+Applied the speed of sound constant (0.034 cm/μs) to derive distance, understanding why the result must be divided by 2 (to account for the out-and-back path).
+
+Mastered the logic of manually toggling a trigger pin to initiate a sensor reading.
 
 * **Observations:** 
+
+Noticed that soft or angled surfaces (like fabric) can absorb or deflect sound waves, leading to occasional "ghost" readings or inaccuracies.
+
+Confirmed that the sensor provides highly stable readings for flat, solid objects within a 2 cm to 400 cm range.
+
+Observed that adding a small delay() is necessary to prevent the outgoing sound pulses from interfering with the previous echoes.
 
 
 
 ### Day 6: 31/01/2026
 
-* **Activities:** 
+* **Activities:** Integrated the KY-024 Linear Magnetic Hall Sensor to explore electromagnetic field detection. The goal was to move beyond simple "on/off" detection and measure the varying intensity of a magnetic field based on proximity and polarity.
 
-* **Challanges:**
+* **Technical Skills Acquired:** 
+
+Learned how a Hall Effect sensor converts magnetic field strength into a linear voltage range, allowing for distance-based sensing rather than just binary detection.
+
+Practiced setting software thresholds to distinguish between ambient magnetic noise and the deliberate presence of a magnet.
+
+Observed how the analog values react differently depending on which pole (North or South) of the magnet is facing the sensor.
 
 * **Observations:** 
+
+Noticed that the sensor is highly sensitive to distance; even a few millimeters of movement caused significant shifts in the 0–1023 analog range.
+
+Identified that without a magnet nearby, the sensor stabilizes at a "resting" value (roughly 512), representing a zero-field state.
+
+Observed that electronic devices nearby (like smartphone speakers) can cause minor fluctuations in the readings, highlighting the importance of shielding in precise projects.
 
 
 
 ### Day 7: 01/02/2026
 
-* **Activities:** 
+* **Activities:** Tested and implemented the Digital Hall Effect Sensor to understand binary magnetic sensing. The objective was to create a contactless switch mechanism that triggers based on the presence of a magnetic field.
 
-* **Challanges:**
+* **Technical Skills Acquired:** 
+
+Mastered the use of digitalRead() to detect physical presence without mechanical wear, utilizing the Hall effect as a digital trigger.
+
+Learned how to distinguish between "On" (Detected) and "Off" (Not Detected) states to automate responses, such as simulated security alerts.
+
+Verified the difference between analog fluctuation and the clean, latching signal of a digital Hall module.
 
 * **Observations:** 
+
+Observed that the sensor has a specific "activation point"; the signal only flips to LOW when the magnet reaches a precise distance, providing a very reliable trigger.
+
+Noticed that some digital Hall sensors are unipolar, meaning they only react to one specific side (pole) of the magnet, which is a critical factor for installation.
+
+Confirmed that because there are no moving parts involved in the sensing, this method is superior to mechanical limit switches for long-term use in dusty or high-vibration environments.
