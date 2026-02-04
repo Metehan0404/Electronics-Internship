@@ -3,9 +3,18 @@
 This repository contains my work and sensor tests during the electronics lab internship.
 
 ## Project Structure
-* [`sensor notes`](./sensor%20notes) : Detailed documentation for each sensor.
-* [`weekly logs`](./weekly%20logs) : Weekly progress reports.
-* [`project notes`](./project%20notes) : Detailed documentation for projects.
+
+<ul>
+  <li>
+    <a href="sensor%20notes/"><code>sensor notes</code></a> : Detailed documentation for each sensor.
+  </li>
+  <li>
+    <a href="weekly%20logs/"><code>weekly logs</code></a> : Weekly progress reports.
+  </li>
+  <li>
+    <a href="project%20notes/"><code>project notes</code></a> : Detailed documentation for projects.
+  </li>
+</ul>
 
 ## Hardware Used
 - **Microcontroller:** Arduino Uno (Joy-IT R3 DIP)
